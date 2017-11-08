@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul,
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Microsoft YaHei";
+  color: #888;
+  background: #f0f0f0; }
+  body .newleft {
+    width: 74px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 323px;
+    display: block; }
+    body .newleft ul {
+      width: 74px;
+      height: 100%;
+      background: #d10048;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 10px;
+      text-align: center;
+      z-index: 10; }
+      body .newleft ul li {
+        height: 46px;
+        line-height: 46px;
+        overflow: hidden; }
+        body .newleft ul li a {
+          display: block;
+          width: 74px;
+          height: 44px;
+          color: #fff;
+          overflow: hidden; }
+        body .newleft ul li .productMenu {
+          width: 74px;
+          height: 100%;
+          background: #ababab;
+          background: #ababab;
+          position: fixed;
+          left: 74px;
+          text-align: center;
+          top: 0;
+          padding-top: 46px;
+          display: none; }
+          body .newleft ul li .productMenu span {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #edece4;
+            opacity: 0.2; }
+      body .newleft ul .xinxi:hover .productMenu {
+        display: block; }
+  body .newright {
+    width: 54px;
+    position: fixed;
+    right: 10px;
+    top: 10%;
+    height: auto;
+    z-index: 10; }
+    body .newright div {
+      border: 0; }
+      body .newright div a img {
+        display: block; }
+    body .newright .newtop {
+      display: none; }
+  body header {
+    width: 1152px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    body header h1 {
+      height: 70px;
+      padding-top: 10px;
+      line-height: 70px; }
+      body header h1 a img {
+        display: inline-block; }
+    body header ul {
+      margin-top: 34px;
+      width: 380px;
+      height: 23px;
+      float: right;
+      position: relative;
+      right: -10px;
+      display: inline; }
+      body header ul li {
+        float: left; }
+        body header ul li a {
+          position: relative;
+          padding: 0 2px;
+          color: #888; }
+          body header ul li a .oSpan {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #D10048;
+            position: absolute;
+            top: -2px;
+            left: 15px;
+            text-align: center;
+            padding: 0 1px;
+            color: #FFFFFF;
+            line-height: 18px;
+            font-size: 12px; }
+        body header ul li .tel {
+          display: inline-block;
+          padding-right: 6px;
+          font-size: 18px;
+          background-position: 0 -45px;
+          width: 23px;
+          height: 22px;
+          margin-top: -8px; }
+        body header ul li .fdj {
+          display: inline-block;
+          font-size: 20px;
+          margin-top: -6px; }
+  body .footer {
+    margin-top: 60px; }
+    body .footer .footerTop {
+      margin-top: 10px 0;
+      height: 180px;
+      width: 1152px;
+      margin: 0 auto;
+      border-bottom: 1px solid #dce0e3;
+      padding-bottom: 30px; }
+      body .footer .footerTop .fl {
+        width: 39%;
+        float: left;
+        display: inline; }
+        body .footer .footerTop .fl ul li {
+          margin-right: 20px !important;
+          float: left;
+          display: inline;
+          margin: 10px 30px 0 0;
+          text-align: center; }
+          body .footer .footerTop .fl ul li a {
+            display: block;
+            color: #888888;
+            font-size: 18px; }
+          body .footer .footerTop .fl ul li .md {
+            width: 76px;
+            height: 75px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            border: 2px solid #aaa;
+            font-size: 58px;
+            line-height: 75px;
+            text-align: center; }
+      body .footer .footerTop .fc {
+        width: 61%;
+        float: right;
+        display: inline; }
+        body .footer .footerTop .fc dl {
+          width: 117px !important;
+          float: left;
+          text-shadow: #fff 0 1px 0;
+          font-size: 14px;
+          line-height: 30px; }
+          body .footer .footerTop .fc dl dt {
+            font-size: 18px;
+            font-weight: normal; }
+          body .footer .footerTop .fc dl dd a {
+            color: #888; }
+        body .footer .footerTop .fc .ewm dd img {
+          width: 100px;
+          display: inline-block; }
+    body .footer .footerBottom {
+      padding-bottom: 20px;
+      width: 100%;
+      margin-top: 12px;
+      padding: 25px 0 0; }
+      body .footer .footerBottom ul {
+        width: 555px;
+        margin: 0 auto; }
+        body .footer .footerBottom ul li {
+          float: left;
+          display: inline-block;
+          border-right: 1px solid #909090;
+          border-left: 1px solid #e0e0e0;
+          height: 20px;
+          line-height: 20px; }
+          body .footer .footerBottom ul li a {
+            color: #888888;
+            padding: 0 12px;
+            font-size: 15px; }
+        body .footer .footerBottom ul .one {
+          border-left: none; }
+        body .footer .footerBottom ul .last {
+          border-right: none; }
+      body .footer .footerBottom p {
+        width: 578px;
+        margin: 0 auto;
+        font-size: 14px;
+        text-shadow: #fff 0 1px 0;
+        padding-bottom: 20px; }
+        body .footer .footerBottom p a img {
+          vertical-align: middle;
+          border: 0; }
+      body .footer .footerBottom .fbdiv {
+        padding-bottom: 10px;
+        text-align: center; }
+        body .footer .footerBottom .fbdiv a {
+          padding: 0 10px;
+          color: #888888;
+          font-size: 12px;
+          line-height: 16px; }
+          body .footer .footerBottom .fbdiv a img {
+            vertical-align: middle;
+            border: 0; }
+  body #mainContent {
+    width: auto;
+    height: auto; }
+    body #mainContent .banbox {
+      width: 1152px;
+      margin: 0 auto;
+      height: 412px;
+      position: relative; }
+      body #mainContent .banbox .ban {
+        width: 100%;
+        position: relative;
+        height: 400px;
+        margin-bottom: 20px;
+        overflow: hidden; }
+        body #mainContent .banbox .ban ul {
+          width: 300%;
+          height: 412px;
+          position: absolute; }
+          body #mainContent .banbox .ban ul li {
+            visibility: visible;
+            display: list-item;
+            position: absolute;
+            width: 1152px;
+            height: 400px; }
+            body #mainContent .banbox .ban ul li a img {
+              width: 1210px;
+              height: 400px;
+              position: absolute;
+              left: -29px; }
+        body #mainContent .banbox .ban span {
+          font-size: 24px;
+          z-index: 20;
+          background: #222; }
+        body #mainContent .banbox .ban span:hover {
+          background: #e1472f; }
+        body #mainContent .banbox .ban .lbtn {
+          position: absolute;
+          top: 200px;
+          left: 0;
+          opacity: 0;
+          color: #000;
+          width: 42px;
+          height: 43px;
+          line-height: 43px;
+          text-align: center;
+          visibility: visible; }
+        body #mainContent .banbox .ban .rbtn {
+          position: absolute;
+          top: 200px;
+          right: 0;
+          width: 42px;
+          height: 43px;
+          line-height: 43px;
+          text-align: center;
+          opacity: 0;
+          visibility: visible; }
+      body #mainContent .banbox #focusList {
+        position: absolute;
+        bottom: 12px;
+        left: 294px;
+        width: 564px;
+        height: 6px;
+        z-index: 20;
+        visibility: visible; }
+      body #mainContent .banbox #focusList .di {
+        z-index: 11;
+        cursor: pointer;
+        background: #fff;
+        width: 188px;
+        height: 6px;
+        float: left; }
+      body #mainContent .banbox #focusList .cur {
+        background: red; }
+    body #mainContent .content {
+      width: 1152px;
+      height: auto;
+      margin: 0 auto; }
+      body #mainContent .content .cbox {
+        width: 1152px;
+        height: auto;
+        display: flex;
+        justify-content: space-around; }
+        body #mainContent .content .cbox .col {
+          float: left;
+          width: 380px; }
+          body #mainContent .content .cbox .col li {
+            display: flex;
+            margin-right: 2px;
+            margin-bottom: 4px;
+            background: #FFFFFF; }
+            body #mainContent .content .cbox .col li .libox {
+              width: 164px;
+              height: 201px;
+              margin: 0 auto;
+              padding: 16px 10px 10px 16px; }
+              body #mainContent .content .cbox .col li .libox h2 {
+                font-size: 14px;
+                color: #000;
+                width: 164px;
+                height: 40px;
+                line-height: 20px; }
+              body #mainContent .content .cbox .col li .libox p {
+                width: 164px;
+                height: auto;
+                line-height: 16px; }
+              body #mainContent .content .cbox .col li .libox .redtxt {
+                color: #D10048; }
+              body #mainContent .content .cbox .col li .libox .price {
+                font-size: 24px;
+                margin-top: 46px; }
+            body #mainContent .content .cbox .col li a img {
+              display: block;
+              border: 0;
+              width: 190px;
+              height: 226px; }
+          body #mainContent .content .cbox .col .tu a img {
+            width: 380px;
+            height: 227px; }
+          body #mainContent .content .cbox .col .tu1 a img {
+            width: 380px;
+            height: 458px; }
+
+/*# sourceMappingURL=index.css.map */
