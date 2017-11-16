@@ -1,0 +1,59 @@
+#ehong-code-input {
+  width: 42px;
+  letter-spacing: 2px;
+  margin: 0px 8px 0px 0px; }
+
+.ehong-idcode-val {
+  position: relative;
+  padding: 1px 4px 1px 4px;
+  top: 0px;
+  *top: -3px;
+  letter-spacing: 4px;
+  display: inline;
+  cursor: pointer;
+  font-size: 26px;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  top: 3px;
+  font-weight: bold; }
+
+.ehong-idcode-val0 {
+  border: solid 1px #a4cded;
+  background-color: #ecfafb; }
+
+.ehong-idcode-val1 {
+  border: solid 1px #a4cded;
+  background-color: #fcefcf; }
+
+.ehong-idcode-val2 {
+  border: solid 1px #6c9;
+  background-color: #d0f0df; }
+
+.ehong-idcode-val3 {
+  border: solid 1px #6c9;
+  background-color: #dcddd8; }
+
+.ehong-idcode-val4 {
+  border: solid 1px #6c9;
+  background-color: #f1deff; }
+
+.ehong-idcode-val5 {
+  border: solid 1px #6c9;
+  background-color: #ace1f1; }
+
+.ehong-code-val-tip {
+  font-size: 12px;
+  color: #1098ec;
+  top: 0px;
+  *top: -3px;
+  position: relative;
+  margin: 0px 0px 0px 4px;
+  cursor: pointer; }
+
+#Txtidcode {
+  height: 40px;
+  width: 120px;
+  border: 0;
+  margin-left: 16px; }
+
+/*# sourceMappingURL=jquery.idcode.css.map */

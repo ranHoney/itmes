@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0; }
 
-ul, li {
+ul,
+li {
   list-style: none; }
 
 a {
   text-decoration: none; }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 body {
@@ -37,8 +39,7 @@ body {
       body .newleft ul li {
         height: 46px;
         line-height: 46px;
-        overflow: hidden;
-        background: url(../img/navbg.png) no-repeat center bottom; }
+        overflow: hidden; }
         body .newleft ul li a {
           display: block;
           width: 74px;
@@ -62,6 +63,8 @@ body {
             height: 1px;
             background: #edece4;
             opacity: 0.2; }
+      body .newleft ul .xinxi:hover .productMenu {
+        display: block; }
   body .newright {
     width: 54px;
     position: fixed;
@@ -70,33 +73,23 @@ body {
     height: auto;
     z-index: 10; }
     body .newright div {
-      border: 0;
-      position: relative; }
+      border: 0; }
       body .newright div a img {
-        display: block; }
-    body .newright .ke {
-      height: 92px;
-      width: 231px;
-      position: absolute;
-      top: 90px;
-      right: 200px;
-      opacity: 0;
-      z-index: -2; }
-      body .newright .ke .kefuTel {
         display: block; }
     body .newright .newtop {
       display: none; }
   body .head {
     width: 100%;
-    overflow: hidden; }
+    height: 80px;
+    overflow: hidden;
+    display: none; }
     body .head .search {
       width: 100%;
-      height: 80px;
+      height: 70px;
       background: rgba(0, 0, 0, 0.3);
       position: relative;
       z-index: 999; }
       body .head .search .search-box {
-        opacity: 1;
         width: 700px;
         height: 40px;
         top: 16px;
@@ -108,16 +101,18 @@ body {
         body .head .search .search-box form #searchInput {
           width: 550px;
           height: 40px;
-          padding: 0 18px;
+          padding: 0 20px;
           font-size: 14px;
           color: #555;
           border: 0 none;
           background: #FFFFFF;
           overflow: hidden;
+          float: left;
           vertical-align: middle; }
-        body .head .search .search-box form input:nth-last-of-type(1) {
+        body .head .search .search-box form button {
           width: 110px;
           height: 40px;
+          float: left;
           text-align: center;
           font-size: 14px;
           color: #FFFFFF;
@@ -127,14 +122,6 @@ body {
           background: #000000;
           outline: none;
           cursor: pointer; }
-        body .head .search .search-box .close {
-          cursor: pointer;
-          width: 24px;
-          height: 24px;
-          position: absolute;
-          top: 8px;
-          right: -40px;
-          background: url(../img/vivo-head-ico.png) no-repeat -86px 0; }
   body header {
     width: 1152px;
     height: 70px;
@@ -149,6 +136,7 @@ body {
         display: inline-block; }
     body header ul {
       margin-top: 34px;
+      width: 380px;
       height: 23px;
       float: right;
       position: relative;
@@ -353,217 +341,43 @@ body {
         display: flex;
         justify-content: space-around; }
         body #mainContent .content .cbox .col {
-          position: relative;
           float: left;
           width: 380px; }
-          body #mainContent .content .cbox .col > a {
-            color: #888888;
-            position: absolute;
-            width: 380px;
-            height: 227px; }
           body #mainContent .content .cbox .col li {
             display: flex;
             margin-right: 2px;
             margin-bottom: 4px;
             background: #FFFFFF; }
-            body #mainContent .content .cbox .col li > a > .libox {
+            body #mainContent .content .cbox .col li .libox {
               width: 164px;
               height: 201px;
               margin: 0 auto;
               padding: 16px 10px 10px 16px; }
-              body #mainContent .content .cbox .col li > a > .libox h2 {
+              body #mainContent .content .cbox .col li .libox h2 {
                 font-size: 14px;
                 color: #000;
                 width: 164px;
                 height: 40px;
                 line-height: 20px; }
-              body #mainContent .content .cbox .col li > a > .libox p {
+              body #mainContent .content .cbox .col li .libox p {
                 width: 164px;
                 height: auto;
-                color: #888888;
                 line-height: 16px; }
-              body #mainContent .content .cbox .col li > a > .libox .redtxt {
+              body #mainContent .content .cbox .col li .libox .redtxt {
                 color: #D10048; }
-              body #mainContent .content .cbox .col li > a > .libox .price {
+              body #mainContent .content .cbox .col li .libox .price {
                 font-size: 24px;
                 margin-top: 46px; }
-            body #mainContent .content .cbox .col li .a1 {
-              position: relative;
-              top: 0; }
-            body #mainContent .content .cbox .col li .a1 img {
+            body #mainContent .content .cbox .col li a img {
               display: block;
               border: 0;
               width: 190px;
               height: 226px; }
-            body #mainContent .content .cbox .col li .a5 img {
-              width: 380px;
-              display: inline-block; }
-            body #mainContent .content .cbox .col li .zuo {
-              padding: 10px;
-              width: 190px; }
-              body #mainContent .content .cbox .col li .zuo h2 {
-                font-size: 14px;
-                color: #000;
-                width: 165px;
-                height: 40px;
-                line-height: 20px; }
-              body #mainContent .content .cbox .col li .zuo p {
-                width: 164px;
-                height: auto;
-                color: #888888;
-                line-height: 16px; }
-              body #mainContent .content .cbox .col li .zuo .redtxt {
-                color: #D10048; }
-              body #mainContent .content .cbox .col li .zuo .price {
-                font-size: 24px;
-                margin-top: 46px; }
-          body #mainContent .content .cbox .col .all-info {
-            background: #fff;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 380px;
-            z-index: -1;
-            opacity: 0; }
-            body #mainContent .content .cbox .col .all-info .inner {
-              position: relative;
-              overflow: hidden;
-              height: 689px; }
-              body #mainContent .content .cbox .col .all-info .inner .closed {
-                width: 24px;
-                height: 24px;
-                position: absolute;
-                top: 8px;
-                right: 10px;
-                background: url(../img/vivo-head-ico.png) no-repeat -86px 0; }
-                body #mainContent .content .cbox .col .all-info .inner .closed img {
-                  width: 100%;
-                  border: 0;
-                  vertical-align: middle; }
-              body #mainContent .content .cbox .col .all-info .inner .b {
-                padding: 20px; }
-                body #mainContent .content .cbox .col .all-info .inner .b h2 {
-                  color: #666;
-                  font-size: 14px;
-                  line-height: 2; }
-                  body #mainContent .content .cbox .col .all-info .inner .b h2 a {
-                    color: #888; }
-                body #mainContent .content .cbox .col .all-info .inner .b p {
-                  line-height: 22px; }
-                  body #mainContent .content .cbox .col .all-info .inner .b p a {
-                    color: #888; }
-                body #mainContent .content .cbox .col .all-info .inner .b .car-wrap {
-                  width: 100%;
-                  text-align: right;
-                  margin-top: 10px; }
-                  body #mainContent .content .cbox .col .all-info .inner .b .car-wrap .price {
-                    color: red;
-                    font-size: 14px; }
-                  body #mainContent .content .cbox .col .all-info .inner .b .car-wrap .carbtn {
-                    background: url(../img/index-bg.png) no-repeat 0 -112px;
-                    display: inline-block;
-                    margin-right: 10px;
-                    width: 30px;
-                    height: 30px;
-                    vertical-align: -10px; }
-                body #mainContent .content .cbox .col .all-info .inner .b .all-info-list {
-                  margin-top: 30px;
-                  width: 100%; }
-                  body #mainContent .content .cbox .col .all-info .inner .b .all-info-list li {
-                    width: 27.4%;
-                    float: left;
-                    margin: 0 10px;
-                    text-align: center; }
-                    body #mainContent .content .cbox .col .all-info .inner .b .all-info-list li img {
-                      display: inline-block;
-                      width: 80px;
-                      height: 104px; }
-          body #mainContent .content .cbox .col a > .tu > .a1 img {
+          body #mainContent .content .cbox .col .tu a img {
             width: 380px;
             height: 227px; }
-          body #mainContent .content .cbox .col a > .tu1 > .a1 img {
+          body #mainContent .content .cbox .col .tu1 a img {
             width: 380px;
             height: 458px; }
-      body #mainContent .content .bBox {
-        width: 1152px; }
-        body #mainContent .content .bBox .box1 {
-          width: 1152px;
-          height: 227px;
-          margin: 0 0 4px 0;
-          cursor: pointer;
-          display: flex; }
-        body #mainContent .content .bBox .box1 .col-one,
-        body #mainContent .content .bBox .box1 .col-two {
-          display: flex;
-          justify-content: space-around; }
-        body #mainContent .content .bBox .box1 .COL {
-          width: 49.5%;
-          margin-right: 4px;
-          margin: 0 4px 0 0;
-          position: relative;
-          overflow: hidden; }
-          body #mainContent .content .bBox .box1 .COL .onel {
-            padding: 20px 15px 0;
-            width: 228px;
-            color: #969696;
-            background: #fff;
-            height: 227px; }
-            body #mainContent .content .bBox .box1 .COL .onel h4 {
-              line-height: 22px;
-              margin-bottom: 20px;
-              height: 40px;
-              overflow: hidden; }
-              body #mainContent .content .bBox .box1 .COL .onel h4 a {
-                color: #888;
-                font-size: 14px; }
-            body #mainContent .content .bBox .box1 .COL .onel p {
-              width: 94%;
-              height: 108px; }
-              body #mainContent .content .bBox .box1 .COL .onel p a {
-                color: #969696; }
-              body #mainContent .content .bBox .box1 .COL .onel p .text1 {
-                color: #D10048;
-                display: block; }
-          body #mainContent .content .bBox .box1 .COL .oImg {
-            height: 227px;
-            width: 342px;
-            float: right;
-            overflow: hidden;
-            position: relative;
-            top: 0; }
-          body #mainContent .content .bBox .box1 .COL .oImg1 {
-            position: relative;
-            top: 0; }
-        body #mainContent .content .bBox .box1 .col-four .onel,
-        body #mainContent .content .bBox .box1 .col-th .onel {
-          padding: 20px 10px; }
-        body #mainContent .content .bBox .col-b {
-          position: relative; }
-          body #mainContent .content .bBox .col-b .COL {
-            justify-content: space-around;
-            display: flex;
-            position: relative; }
-            body #mainContent .content .bBox .col-b .COL .onel {
-              top: 0; }
-    body #mainContent .arrow-right {
-      width: 0;
-      height: 0;
-      position: absolute;
-      top: 43px;
-      right: 0;
-      z-index: 89999;
-      border-bottom: 14px solid transparent;
-      border-right: 14px solid #fff;
-      border-top: 14px solid transparent; }
-    body #mainContent .arrow-left {
-      width: 0;
-      height: 0;
-      position: absolute;
-      top: 43px;
-      left: 0;
-      z-index: 89999;
-      border-bottom: 14px solid transparent;
-      border-left: 14px solid #fff;
-      border-top: 14px solid transparent; }
 
 /*# sourceMappingURL=index.css.map */

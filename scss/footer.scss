@@ -1,0 +1,151 @@
+ @charset "utf-8";
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ ul,
+ li {
+     list-style: none;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ html,
+ body {
+     height: 100%;
+ }
+ 
+ body {
+     font-size: 12px;
+     line-height: 1.5;
+     font-family: "Microsoft YaHei";
+     color: #888;
+     background: #f0f0f0;
+     .footer {
+         margin-top: 60px;
+//       position: absolute;
+//       bottom: 0;
+//       left: 140px;
+         .footerTop {
+             margin-top: 10px 0;
+             height: 180px;
+             width: 1152px;
+             margin: 0 auto;
+             border-bottom: 1px solid #dce0e3;
+             padding-bottom: 30px;
+             .fl {
+                 width: 39%;
+                 float: left;
+                 display: inline;
+                 ul li {
+                     margin-right: 20px !important;
+                     float: left;
+                     display: inline;
+                     margin: 10px 30px 0 0;
+                     text-align: center;
+                     a {
+                         display: block;
+                         color: #888888;
+                         font-size: 18px;
+                     }
+                     .md {
+                         width: 76px;
+                         height: 75px;
+                         border-radius: 50%;
+                         margin: 0 auto 10px;
+                         border: 2px solid #aaa;
+                         font-size: 58px;
+                         line-height: 75px;
+                         text-align: center;
+                     }
+                 }
+             }
+             .fc {
+                 width: 61%;
+                 float: right;
+                 display: inline;
+                 dl {
+                     width: 117px !important;
+                     float: left;
+                     text-shadow: #fff 0 1px 0;
+                     font-size: 14px;
+                     line-height: 30px;
+                     dt {
+                         font-size: 18px;
+                         font-weight: normal;
+                     }
+                     dd {
+                         a {
+                             color: #888;
+                         }
+                     }
+                 }
+                 .ewm {
+                     dd img {
+                         width: 100px;
+                         display: inline-block;
+                     }
+                 }
+             }
+         }
+         .footerBottom {
+             padding-bottom: 20px;
+             width: 100%;
+             margin-top: 12px;
+             padding: 25px 0 0;
+             ul {
+                 width: 555px;
+                 margin: 0 auto;
+                 li {
+                     float: left;
+                     display: inline-block;
+                     border-right: 1px solid #909090;
+                     border-left: 1px solid #e0e0e0;
+                     height: 20px;
+                     line-height: 20px;
+                     a {
+                         color: #888888;
+                         padding: 0 12px;
+                         font-size: 15px;
+                     }
+                 }
+                 .one {
+                     border-left: none;
+                 }
+                 .last {
+                     border-right: none;
+                 }
+             }
+             p {
+                 width: 578px;
+                 margin: 0 auto;
+                 font-size: 14px;
+                 text-shadow: #fff 0 1px 0;
+                 padding-bottom: 20px;
+                 a {
+                     img {
+                         vertical-align: middle;
+                         border: 0;
+                     }
+                 }
+             }
+             .fbdiv {
+                 padding-bottom: 10px;
+                 text-align: center;
+                 a {
+                     padding: 0 10px;
+                     color: #888888;
+                     font-size: 12px;
+                     line-height: 16px;
+                     img {
+                         vertical-align: middle;
+                         border: 0;
+                     }
+                 }
+             }
+         }
+     }
+}

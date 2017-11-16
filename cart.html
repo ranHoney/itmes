@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="scss/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="scss/base.css"/>
+	</head>
+	<body>
+		<div class="newleft">
+			<ul>
+				<li>
+					<a href="index.html">首   页</a>
+				</li>
+				<li class="xinxi">
+					<a href="#">品牌系列</a>
+					<div class="productMenu">
+						<span></span>
+						<a href="">维您</a>
+						<span></span>
+						<a href="">LA CELLER</a>
+						<span></span>							
+						<a href="">秘密花园</a>
+						<span></span>
+					</div>
+				</li>
+				<li>
+					<a href="productList.html">美容护肤</a>
+				</li>
+				<li>
+					<a href="productList.html">健康养生</a>
+				</li>
+				<li>
+					<a href="productList.html">家具日常</a>
+				</li>
+				<li>
+					<a href="">积分换购</a>
+				</li>
+				<li class="ass">
+					<a href="#">VIP
+					<br/>会员专区</a>
+				</li>
+				<li>
+					<a href="">关于麦考林</a>
+				</li>
+				<li>
+					<a href="">企业荣誉</a>
+				</li>
+			</ul>
+		</div>
+		<div class="newright">
+			<div class="kefu">
+				<a href="#"><img src="img/rightSider_01.png" /></a>
+			</div>
+			<div class="consult-tel">
+				<a href="#"><img src="img/rightSider_02.png" /></a>
+			</div>
+			<div class="gonggao">
+				<a href="#"><img src="img/gonggao.jpg" /></a>
+			</div>
+			<div class="ke">
+				<img src="img/kefu1.png" alt="" class="kefuTel"/>
+			</div>
+			<a href="" class="newTop"><img src="img/rightSider_04.png" /></a>
+		</div>
+
+		<div id="tou"></div>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		
+		<div id="cartList" class="com">
+			<div class="r c-r1">
+				<h3 class="com-head">购物车</h3>	
+				<table class="cart_group cart_pro">
+					<thead>
+						<tr>
+							<th><input type="checkbox" class="in1"/></th>
+							<th class="cart_overview"> 
+								<div class="cart_head"><h2>商品名称</h2></div>
+							</th>
+							<th class="cart_price">价格</th>
+							<th class="num">数量</th>
+							<th class="jiage">小计（元）</th>
+							<th class="cart_option">操作</th>
+						</tr>
+					</thead>
+					<tbody id="shangpinxinxi">
+						
+					</tbody>
+				</table>
+				<div class="common_h">
+					<div class="r_h">
+						<span>总价:</span><span class="t-p">0</span>
+						<a href="javascript:void(0);" class="btn" id="g-t-o">立即结算</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="weibu">
+			
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$("#weibu").load("footer.html");
+			})
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$("#tou").load("base.html")
+			})
+		</script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

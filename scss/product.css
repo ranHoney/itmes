@@ -1,0 +1,306 @@
+body, ul, li, h4, p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: none; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#list #proList {
+  width: 1127px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px 0 0 25px; }
+  #list #proList:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  #list #proList li {
+    float: left;
+    margin: 20px;
+    width: 220px;
+    height: 300px;
+    padding: 10px; }
+    #list #proList li > a {
+      display: block;
+      width: 220px;
+      border: 1px solid #ddd;
+      padding: 6px 0;
+      text-align: center;
+      margin-bottom: 10px; }
+      #list #proList li > a > img {
+        overflow: hidden;
+        width: 160px;
+        height: 208px; }
+    #list #proList li h4 {
+      font-size: 13px;
+      height: 38px;
+      margin: 10px 0;
+      overflow: hidden; }
+      #list #proList li h4 > a {
+        color: #888; }
+    #list #proList li p {
+      margin-top: 10px;
+      position: relative; }
+      #list #proList li p > span {
+        font-size: 14px;
+        color: #f52648; }
+      #list #proList li p input {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 0;
+        width: 30px;
+        height: 30px;
+        border: none;
+        font-size: 19px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background: #F83652;
+        color: #fff; }
+#list .fenye {
+  width: 76.9%;
+  margin: 0 auto;
+  padding: 40px;
+  height: 30px;
+  background: #fff; }
+  #list .fenye #pageList {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0; }
+    #list .fenye #pageList a {
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 16px; }
+
+.nav-wrap {
+  background: #fff;
+  padding: 0 20px;
+  width: 1112px;
+  margin: 0 auto; }
+  .nav-wrap .nav-box {
+    padding: 12px 0;
+    border-bottom: 2px solid #eceae6; }
+    .nav-wrap .nav-box a {
+      color: #888888; }
+  .nav-wrap #ul-nav {
+    clear: both; }
+    .nav-wrap #ul-nav li {
+      border-bottom: 1px solid #ECEAE6;
+      padding: 7px 0;
+      zoom: 1;
+      position: relative;
+      overflow: hidden; }
+      .nav-wrap #ul-nav li b {
+        float: left;
+        width: 70px;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 28px; }
+      .nav-wrap #ul-nav li .more {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 36px;
+        height: 22px;
+        line-height: 22px;
+        color: #FEA417;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 22; }
+        .nav-wrap #ul-nav li .more a {
+          color: #FEA417; }
+          .nav-wrap #ul-nav li .more a i {
+            width: 7px;
+            height: 4px;
+            float: right;
+            display: inline-block;
+            margin: 8px 0 0;
+            background: url(../img/sico2.png) no-repeat 0 -46px; }
+      .nav-wrap #ul-nav li .hide {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 36px;
+        display: none;
+        height: 22px;
+        line-height: 22px;
+        color: #FEA417;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 22; }
+        .nav-wrap #ul-nav li .hide a {
+          color: #FEA417; }
+          .nav-wrap #ul-nav li .hide a i {
+            background: url(../img/sico2.png) no-repeat -10px -46px;
+            width: 7px;
+            height: 4px;
+            float: right;
+            display: inline-block;
+            margin: 8px 0 0; }
+      .nav-wrap #ul-nav li .mod {
+        float: left;
+        width: 860px;
+        margin-left: 23px; }
+        .nav-wrap #ul-nav li .mod span {
+          position: relative;
+          float: left;
+          width: 120px;
+          margin: 0 40px 0 5px;
+          height: 28px;
+          overflow: hidden;
+          line-height: 28px; }
+          .nav-wrap #ul-nav li .mod span a {
+            color: #666;
+            white-space: nowrap; }
+            .nav-wrap #ul-nav li .mod span a i {
+              font-style: normal;
+              font-family: arial;
+              color: #999; }
+      .nav-wrap #ul-nav li .allBrands {
+        width: 860px;
+        margin-left: 92px;
+        display: none; }
+  .nav-wrap .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.subnav {
+  background: #535353;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  width: 1112px;
+  margin: 0 auto;
+  height: 38px;
+  padding: 0 20px;
+  margin-top: 20px; }
+  .subnav h3 {
+    font-size: 15px;
+    line-height: 38px;
+    float: left;
+    color: #fff;
+    display: inline; }
+  .subnav ul {
+    margin-left: 20px;
+    float: left;
+    display: inline; }
+    .subnav ul li {
+      float: left;
+      height: 38px;
+      line-height: 38px;
+      font-size: 14px;
+      padding: 0 10px; }
+      .subnav ul li a {
+        color: #fff;
+        width: 50px;
+        display: inline-block;
+        position: relative; }
+        .subnav ul li a b {
+          background: url(../img/sico2.png) no-repeat 0 0;
+          display: inline-block;
+          width: 7px;
+          height: 6px;
+          font-size: 1px;
+          overflow: hidden;
+          position: absolute;
+          top: 15px;
+          right: 0; }
+      .subnav ul li a.pristabe b {
+        background: url(../img/sico2.png) no-repeat -10px 0;
+        height: 14px;
+        margin-top: -4px; }
+    .subnav ul li.active {
+      background: #fff;
+      color: #333; }
+      .subnav ul li.active a {
+        color: #333; }
+        .subnav ul li.active a b {
+          background: url(../img/sico2.png) no-repeat -20px -25px; }
+
+.newleft {
+  width: 74px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 323px;
+  display: block; }
+  .newleft ul {
+    width: 74px;
+    height: 100%;
+    background: #d10048;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 10; }
+    .newleft ul li {
+      height: 46px;
+      line-height: 46px;
+      overflow: hidden;
+      background: url(../img/navbg.png) no-repeat center bottom; }
+      .newleft ul li a {
+        display: block;
+        width: 74px;
+        height: 44px;
+        color: #fff;
+        overflow: hidden; }
+      .newleft ul li .productMenu {
+        width: 74px;
+        height: 100%;
+        background: #ababab;
+        background: #ababab;
+        position: fixed;
+        left: 74px;
+        text-align: center;
+        top: 0;
+        padding-top: 46px;
+        display: none; }
+        .newleft ul li .productMenu span {
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: #edece4;
+          opacity: 0.2; }
+
+.newright {
+  width: 54px;
+  position: fixed;
+  right: 10px;
+  top: 10%;
+  height: auto;
+  z-index: 10; }
+  .newright div {
+    border: 0;
+    position: relative; }
+    .newright div a img {
+      display: block; }
+  .newright .ke {
+    height: 92px;
+    width: 231px;
+    position: absolute;
+    top: 90px;
+    right: 200px;
+    opacity: 0;
+    z-index: -2; }
+    .newright .ke .kefuTel {
+      display: block; }
+  .newright .newtop {
+    display: none; }
+
+/*# sourceMappingURL=product.css.map */

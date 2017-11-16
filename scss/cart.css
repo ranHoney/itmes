@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.newleft {
+  width: 74px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 323px;
+  display: block; }
+  .newleft ul {
+    width: 74px;
+    height: 100%;
+    background: #d10048;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 10; }
+    .newleft ul li {
+      height: 46px;
+      line-height: 46px;
+      overflow: hidden;
+      background: url(../img/navbg.png) no-repeat center bottom; }
+      .newleft ul li a {
+        display: block;
+        width: 74px;
+        height: 44px;
+        color: #fff;
+        overflow: hidden; }
+      .newleft ul li .productMenu {
+        width: 74px;
+        height: 100%;
+        background: #ababab;
+        background: #ababab;
+        position: fixed;
+        left: 74px;
+        text-align: center;
+        top: 0;
+        padding-top: 46px;
+        display: none; }
+        .newleft ul li .productMenu span {
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: #edece4;
+          opacity: 0.2; }
+
+.newright {
+  width: 54px;
+  position: fixed;
+  right: 10px;
+  top: 10%;
+  height: auto;
+  z-index: 10; }
+  .newright div {
+    border: 0;
+    position: relative; }
+    .newright div a img {
+      display: block; }
+  .newright .ke {
+    height: 92px;
+    width: 231px;
+    position: absolute;
+    top: 90px;
+    right: 200px;
+    opacity: 0;
+    z-index: -2; }
+    .newright .ke .kefuTel {
+      display: block; }
+  .newright .newtop {
+    display: none; }
+
+#cartList {
+  width: 1002px;
+  height: auto;
+  margin: 0 auto;
+  background: #fff; }
+  #cartList .c-r1 {
+    padding: 20px 30px;
+    margin-bottom: 20px; }
+    #cartList .c-r1 .com-head {
+      font-size: 16px;
+      font-weight: normal;
+      background: url(../img/vivo-head-ico.png) no-repeat -220px 5px;
+      padding-left: 35px; }
+    #cartList .c-r1 .cart_group {
+      width: 100%;
+      margin: 10px 0 0;
+      font-size: 12px;
+      border: 1px solid #eee; }
+      #cartList .c-r1 .cart_group tr {
+        width: 100%; }
+      #cartList .c-r1 .cart_group .cart_overview {
+        width: 50%; }
+        #cartList .c-r1 .cart_group .cart_overview .cart_head {
+          height: 34px;
+          width: 100%;
+          line-height: 34px; }
+          #cartList .c-r1 .cart_group .cart_overview .cart_head h2 {
+            margin: 0 5px 0 2px;
+            display: inline-block;
+            color: #333;
+            font-weight: normal;
+            font-size: 14px; }
+      #cartList .c-r1 .cart_group th {
+        height: 34px;
+        text-align: center;
+        font-weight: bold;
+        border-bottom: 1px solid #eee;
+        background: #fafafa;
+        color: #000;
+        padding: 0;
+        width: 5%; }
+      #cartList .c-r1 .cart_group .in1 {
+        width: 13px;
+        height: 13px; }
+      #cartList .c-r1 .cart_group .cart_price {
+        width: 12%; }
+      #cartList .c-r1 .cart_group .num {
+        width: 12%; }
+      #cartList .c-r1 .cart_group .cart_total {
+        width: 10%; }
+      #cartList .c-r1 .cart_group .cart_option {
+        width: 12%; }
+      #cartList .c-r1 .cart_group .jiage {
+        width: 12%;
+        text-align: center; }
+    #cartList .c-r1 #shangpinxinxi {
+      border-bottom: 1px solid #ddd; }
+      #cartList .c-r1 #shangpinxinxi td {
+        text-align: left;
+        margin: 0 0 0 30px;
+        border: 0;
+        padding: 20px 0 0;
+        padding-left: 11px; }
+        #cartList .c-r1 #shangpinxinxi td img {
+          position: relative;
+          float: left;
+          display: inline-block;
+          width: 70px;
+          height: 91px;
+          margin: 0 10px 20px 0;
+          padding: 0 10px;
+          background: #fff;
+          border: 1px solid #ddd;
+          overflow: hidden; }
+        #cartList .c-r1 #shangpinxinxi td .s1 {
+          display: inline-block;
+          height: 18px;
+          width: 250px;
+          line-height: 16px;
+          color: #000; }
+      #cartList .c-r1 #shangpinxinxi .shan {
+        cursor: pointer;
+        text-align: center;
+        width: 90px;
+        height: 90px;
+        border: 0;
+        font-size: 12px; }
+      #cartList .c-r1 #shangpinxinxi .zongjia {
+        color: #D10048;
+        font-size: 18px; }
+      #cartList .c-r1 #shangpinxinxi .sjg {
+        text-align: center; }
+      #cartList .c-r1 #shangpinxinxi .shuli i {
+        font-style: normal;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #E0E0E0;
+        text-align: center;
+        line-height: 25px;
+        cursor: pointer; }
+      #cartList .c-r1 #shangpinxinxi .shuli span {
+        display: inline-block;
+        width: 30px;
+        height: 25px;
+        line-height: 25px;
+        border-top: 1px solid #E0E0E0;
+        border-bottom: 1px solid #e0e0e0; }
+      #cartList .c-r1 #shangpinxinxi .jia, #cartList .c-r1 #shangpinxinxi .shuli {
+        width: 12%;
+        text-align: center; }
+      #cartList .c-r1 #shangpinxinxi .in2 {
+        width: 5%;
+        text-align: center; }
+        #cartList .c-r1 #shangpinxinxi .in2 input {
+          width: 13px;
+          height: 13px; }
+    #cartList .c-r1 .common_h {
+      width: 940px;
+      shape-image-threshold: 48px;
+      margin: 20px 0;
+      line-height: 48px;
+      overflow: hidden;
+      background: #FAFAFA; }
+      #cartList .c-r1 .common_h .r_h {
+        display: flex;
+        justify-content: flex-end; }
+        #cartList .c-r1 .common_h .r_h span {
+          float: right; }
+        #cartList .c-r1 .common_h .r_h span:nth-of-type(1) {
+          color: #000;
+          padding: 0 6px; }
+        #cartList .c-r1 .common_h .r_h .btn {
+          width: 145px;
+          height: 100%;
+          margin: 0 0 0 10px;
+          font-size: 18px;
+          color: #fff;
+          text-align: center;
+          border-radius: 3px;
+          display: inline-block;
+          float: right;
+          background: -webkit-linear-gradient(top, #fa417d, #db085a); }
+        #cartList .c-r1 .common_h .r_h .t-p {
+          font-size: 20px;
+          line-height: 48px;
+          color: #D10048; }
+
+/*# sourceMappingURL=cart.css.map */

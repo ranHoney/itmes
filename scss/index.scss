@@ -4,21 +4,19 @@
      padding: 0;
  }
  
- ul,
- li {
-     list-style: none;
+ ul,li {
+    list-style: none;
  }
  
  a {
      text-decoration: none;
  }
  
- html,
- body {
-     height: 100%;
+html,body {
+    height: 100%;
  }
  
- body {
+body {
      font-size: 12px;
      line-height: 1.5;
      font-family: "Microsoft YaHei";
@@ -45,6 +43,7 @@
                  height: 46px;
                  line-height: 46px;
                  overflow: hidden;
+                 background: url(../img/navbg.png) no-repeat center bottom;
                  a {
                      display: block;
                      width: 74px;
@@ -52,29 +51,24 @@
                      color: #fff;
                      overflow: hidden;
                  }
-                 .productMenu{
+                 .productMenu {
                      width: 74px;
                      height: 100%;
                      background: #ababab;
-                     background: rgba(171,171,171,1);
+                     background: rgba(171, 171, 171, 1);
                      position: fixed;
                      left: 74px;
                      text-align: center;
                      top: 0;
                      padding-top: 46px;
                      display: none;
-                     span{
+                     span {
                          display: block;
                          width: 100%;
                          height: 1px;
                          background: #edece4;
                          opacity: 0.2;
                      }
-                 }
-             }
-             .xinxi:hover{
-                 .productMenu{
-                     display: block;
                  }
              }
          }
@@ -88,14 +82,84 @@
          z-index: 10;
          div {
              border: 0;
+             position: relative;
              a {
                  img {
                      display: block;
                  }
              }
          }
+         .ke {
+             height: 92px;
+             width: 231px;
+             position: absolute;
+             top: 90px;
+             right: 200px;
+             opacity: 0;
+             z-index: -2;
+             .kefuTel {
+                 display: block;
+             }
+         }
          .newtop {
              display: none;
+         }
+     }
+     .head {
+         width: 100%;
+         overflow: hidden;
+         .search {
+             width: 100%;
+             height: 80px;
+             background: rgba(0, 0, 0, .3);
+             position: relative;
+             z-index: 999;
+             .search-box {
+                 opacity: 1;
+                 width: 700px;
+                 height: 40px;
+                 top: 16px;
+                 left: 50%;
+                 margin-left: -350px;
+                 background: #666;
+                 position: relative;
+                 z-index: 999;
+                 form #searchInput {
+                     width: 550px;
+                     height: 40px;
+                     padding: 0 18px;
+                     font-size: 14px;
+                     color: #555;
+                     border: 0 none;
+                     background: #FFFFFF;
+                     overflow: hidden;
+                     vertical-align: middle;
+                 }
+                 form input:nth-last-of-type(1) {
+                     width: 110px;
+                     height: 40px;
+                     text-align: center;
+                     font-size: 14px;
+                     color: #FFFFFF;
+                     border: none;
+                     overflow: hidden;
+                     vertical-align: middle;
+                     background: #000000;
+                     outline: none;
+                     cursor: pointer;
+                 }
+                 .close {
+                     cursor: pointer;
+                     width: 24px;
+                     height: 24px;
+                     position: absolute;
+                     top: 8px;
+                     right: -40px;
+                     //                  opacity: 1;
+                     background: url(../img/vivo-head-ico.png) no-repeat -86px 0;
+                 }
+             }
+             
          }
      }
      header {
@@ -115,7 +179,7 @@
          }
          ul {
              margin-top: 34px;
-             width: 380px;
+//           width: 380px;
              height: 23px;
              float: right;
              position: relative;
@@ -159,6 +223,7 @@
              }
          }
      }
+
      .footer {
          margin-top: 60px;
          .footerTop {
@@ -287,28 +352,30 @@
              width: 1152px;
              margin: 0 auto;
              height: 412px;
-             position: relative;
+             .ban:hover {
+                 span {
+                     opacity: 1;
+                 }
+             }
              .ban {
                  width: 100%;
-                 position: relative;
                  height: 400px;
+                 position: relative;
                  margin-bottom: 20px;
                  overflow: hidden;
                  ul {
-                     width: 300%;
-                     height: 412px;
                      position: absolute;
+                     width: 4000px;
+                     height: 412px;
                      li {
-                         //                       position: absolute;
                          visibility: visible;
                          display: list-item;
-                         position: absolute;
+                         float: left;
                          width: 1152px;
                          height: 400px;
                          a img {
-                             width: 1210px;
+                             width: 1152px;
                              height: 400px;
-                             position: absolute;
                              left: -29px;
                              //                           opacity: 0;
                          }
@@ -316,58 +383,47 @@
                  }
                  span {
                      font-size: 24px;
-                     z-index: 20;
+                     z-index: 99999;
                      background: #222;
+                     color: #fff;
+                     position: absolute;
+                     top: 50%;
+                     opacity: 0;
+                     cursor: pointer;
+                     width: 42px;
+                     text-align: center;
+                     height: 43px;
+                     line-height: 43px;
+                     visibility: visible;
                  }
-                 span:hover{
+                 span:hover {
                      background: #e1472f;
+                     opacity: 1;
                  }
                  .lbtn {
-                     position: absolute;
-                     top: 200px;
                      left: 0;
-                     opacity: 0;
-                     color: #000;
-                     width: 42px;
-                     height: 43px;
-                     line-height: 43px;
-                     text-align: center;
-                     visibility: visible;
                  }
                  .rbtn {
-                     position: absolute;
-                     top: 200px;
                      right: 0;
-                     width: 42px;
-                     height: 43px;
-                     line-height: 43px;
-                     text-align: center;
-                     opacity: 0;
-                     visibility: visible;
                  }
-             }
-             #focusList {
-                 position: absolute;
-                 bottom: 12px;
-                 left: 294px;
-                 width: 564px;
-                 height: 6px;
-                 z-index: 20;
-                 visibility: visible;
-             }
-             #focusList .di {
-                 z-index: 11;
-                 cursor: pointer;
-                 //                   position: absolute;
-                 background: #fff;
-                 width: 188px;
-                 height: 6px;
-                 float: left;
-                 //                   top: -16px;
-//               transition: color, background 0.1s linear;
-             }
-             #focusList .cur {
-                 background: red;
+                 #focusList {
+                     position: absolute;
+                     bottom: 0;
+                     left: 294px;
+                     z-index: 99999;
+                     >div {
+                         float: left;
+                         width: 188px;
+                         height: 6px;
+                         z-index: 9999;
+                         cursor: pointer;
+                         background: #fff;
+                     }
+                     div.cur {
+                         background: red;
+                         height: 6px;
+                     }
+                 }
              }
          }
          .content {
@@ -380,15 +436,22 @@
                  display: flex;
                  justify-content: space-around;
                  .col {
+                     position: relative;
                      float: left;
                      width: 380px;
-                     //                   margin: 1px;
+                     //                    margin: 1px;
+                     >a {
+                         color: #888888;
+                         position: absolute;
+                         width: 380px;
+                         height: 227px;
+                     }
                      li {
                          display: flex;
                          margin-right: 2px;
                          margin-bottom: 4px;
                          background: #FFFFFF;
-                         .libox {
+                         >a>.libox {
                              width: 164px;
                              height: 201px;
                              margin: 0 auto;
@@ -403,6 +466,7 @@
                              p {
                                  width: 164px;
                                  height: auto;
+                                 color: #888888;
                                  line-height: 16px;
                              }
                              .redtxt {
@@ -413,23 +477,250 @@
                                  margin-top: 46px;
                              }
                          }
-                         a img {
+                         .a1 {
+                             position: relative;
+                             top: 0;
+                         }
+                         .a1 img {
                              display: block;
                              border: 0;
                              width: 190px;
                              height: 226px;
                          }
+                         .a5 img {
+                             width: 380px;
+                             display: inline-block;
+                         }
+                         .zuo {
+                             padding: 10px;
+                             width: 190px;
+                             h2 {
+                                 font-size: 14px;
+                                 color: #000;
+                                 width: 165px;
+                                 height: 40px;
+                                 line-height: 20px;
+                             }
+                             p {
+                                 width: 164px;
+                                 height: auto;
+                                 color: #888888;
+                                 line-height: 16px;
+                             }
+                             .redtxt {
+                                 color: #D10048;
+                             }
+                             .price {
+                                 font-size: 24px;
+                                 margin-top: 46px;
+                             }
+                         }
                      }
-                     .tu a img {
+                     .all-info{
+                         background:#fff;
+//                       display: none;
+                         position: absolute;
+                         left: 0;
+                         top: 0;
+                         width: 380px;
+                         z-index: -1;
+                         opacity: 0;
+//                       width: 0;
+
+                         .inner{
+                             position: relative;
+                             overflow: hidden;
+                             height: 689px;
+                             .closed{
+                                 width: 24px;
+                                 height: 24px;
+                                 position: absolute;
+                                 top:8px;
+                                 right: 10px;
+                                 background: url(../img/vivo-head-ico.png) no-repeat -86px 0;
+                                 img{
+                                     width: 100%;
+                                     border: 0;
+                                     vertical-align: middle;
+                                 }
+                             }
+                            .b{
+                                padding: 20px;
+                                h2{
+                                    color: #666;
+                                    font-size: 14px;
+                                    line-height: 2;
+                                    a{
+                                        color: #888;
+                                    }
+                                }
+                                p{
+                                    line-height: 22px;
+                                    a{
+                                        color: #888;
+                                        
+                                    }
+                                }
+                                .car-wrap{
+                                    width: 100%;
+                                    text-align: right;
+                                    margin-top: 10px;
+                                    .price{
+                                        color: red;
+                                        font-size: 14px;
+                                    }
+                                    .carbtn{
+                                        background: url(../img/index-bg.png) no-repeat 0 -112px;
+                                        display: inline-block;
+                                        margin-right: 10px;
+                                        width: 30px;
+                                        height: 30px;
+                                        vertical-align: -10px;
+                                        
+                                    }
+                                }
+                                .all-info-list{
+                                    margin-top: 30px;
+                                    width: 100%;
+                                    li{
+                                        width: 27.4%;
+                                        float: left;
+                                        margin: 0 10px;
+                                        text-align: center;
+                                        img{
+                                            display: inline-block;
+                                            width: 80px;
+                                            height: 104px;
+                                        }
+                                    }
+                                }
+                            } 
+                         }
+                         
+                     }
+                     
+                     
+                     
+                     a>.tu>.a1 img {
                          width: 380px;
                          height: 227px;
                      }
-                     .tu1 a img {
+                     a>.tu1>.a1 img {
                          width: 380px;
                          height: 458px;
                      }
                  }
              }
+             .bBox {
+                 width: 1152px;
+                 //               height: ;
+                 .box1 {
+                     width: 1152px;
+                     height: 227px;
+                     margin: 0 0 4px 0;
+                     cursor: pointer;
+                     display: flex;
+                 }
+                 .box1 {
+                     .col-one,
+                     .col-two {
+                         display: flex;
+                         justify-content: space-around;
+                     }
+                     .COL {
+                         width: 49.5%;
+                         margin-right: 4px;
+                         margin: 0 4px 0 0;
+                         position: relative;
+                         overflow: hidden;
+                         .onel {
+                             padding: 20px 15px 0;
+                             width: 228px;
+                             color: #969696;
+                             background: #fff;
+                             height: 227px;
+                             h4 {
+                                 line-height: 22px;
+                                 margin-bottom: 20px;
+                                 height: 40px;
+                                 overflow: hidden;
+                                 a {
+                                     color: #888;
+                                     font-size: 14px;
+                                 }
+                             }
+                             p {
+                                 width: 94%;
+                                 height: 108px;
+                                 a {
+                                     color: #969696;
+                                 }
+                                 .text1 {
+                                     color: #D10048;
+                                     display: block;
+                                 }
+                             }
+                         }
+                         .oImg {
+                             height: 227px;
+                             width: 342px;
+                             float: right;
+                             overflow: hidden;
+                             position: relative;
+                             top: 0;
+                         }
+                         .oImg1 {
+                             position: relative;
+                             top: 0;
+                         }
+                     }
+                     .col-four,
+                     .col-th {
+                         .onel {
+                             padding: 20px 10px;
+                         }
+                     }
+                 }
+                 .col-b {
+                     position: relative;
+                     .COL {
+                         justify-content: space-around;
+                         display: flex;
+                         position: relative;
+                         .onel {
+                             //                          position: absolute;
+                             //                          right: -12px;
+                             top: 0;
+                         }
+                     }
+                 }
+             }
+         }
+         .arrow-right {
+             width: 0;
+             height: 0;
+             position: absolute;
+             top: 43px;
+             right: 0;
+             z-index: 89999;
+             border-bottom: 14px solid transparent;
+             //      border-left: 100px solid #FFFF00;
+             border-right: 14px solid #fff;
+             border-top: 14px solid transparent;
+             //      border: 100px solid transparent;
+         }
+         .arrow-left {
+             width: 0;
+             height: 0;
+             position: absolute;
+             top: 43px;
+             left: 0;
+             z-index: 89999;
+             border-bottom: 14px solid transparent;
+             //      border-left: 100px solid #FFFF00;
+             border-left: 14px solid #fff;
+             border-top: 14px solid transparent;
+             //      border: 100px solid transparent;
          }
      }
  }

@@ -1,0 +1,33 @@
+
+[
+	{"title":"麦维丽康藻清盈复合粉固体饮料",
+	"price":"&yen;&nbsp;980",
+	"bianhao":"001",
+	"pinpai":"麦维利",
+	"img"	:"images/jiankang1.jpg"
+	},{"title":"维您综合蔬果乳酸酵素（固体饮料）",
+	"price":"&yen;&nbsp;360",
+	"bianhao":"002",
+	"pinpai":"麦维利",
+	"img"	:"images/jiankang2.jpg"
+	},{"title":"维您蓝莓片（压片糖果）",
+	"price":"&yen;&nbsp;166",
+	"bianhao":"003",
+	"pinpai":"麦维利",
+	"img"	:"images/jiankang3.jpg"
+	},{"title":"维您天然宝螺旋藻片",
+	"price":"&yen;&nbsp;128",
+	"bianhao":"004",
+	"pinpai":"麦维利",
+	"img"	:"images/jiankang4.jpg"
+	},{"title":"维您羊乳维D钙片",
+	"price":"&yen;&nbsp;58",
+	"bianhao":"005",
+	"pinpai":"麦维利",
+	"img"	:"images/jiankang5.jpg"
+	},{"title":"维您B族维生素片",
+	"price":"&yen;&nbsp;68",
+	"bianhao":"006",
+	"pinpai":"麦维利",
+	"img"	:"images/jiankang6.jpg"
+	}]

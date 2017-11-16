@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="scss/detail.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<style>
+			#kuang {
+				width: 414px;
+				height: 364px;
+				border: 1px solid #888;
+				position: absolute;
+				left: 40px;
+				top: 20px;
+			}
+			
+			#sbox {
+				height: 364px;
+				width: 281px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#sbox img {
+				height: 364px;
+				width: 281px;
+				display: block;
+			}
+			
+			.biaoti {
+				height: 62px;
+				width: 461px;
+				line-height: 62px;
+				font-size: 22px;
+				position: absolute;
+				left: 500px;
+				top: 0;
+				border-bottom: 1px dashed #888;
+			}
+			
+			#bigpic {
+				height: 215px;
+				width: 215px;
+				position: absolute;
+				left: 499px;
+				top: 20px;
+				overflow: hidden;
+				display: none;
+			}
+			
+			#bigpic img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 782px;
+				width: 604px;
+			}
+			
+			#money {
+				width: 100px;
+				height: 96px;
+				line-height: 96px;
+				font-size: 18px;
+				color: #cc3333;
+				position: absolute;
+				left: 500px;
+				top: 87px;
+			}
+			
+			#car {
+				text-align: center;
+				display: block;
+				height: 34px;
+				width: 140px;
+				background: #d20049;
+				color: #fff;
+				font-size: 16px;
+				line-height: 34px;
+				position: absolute;
+				left: 500px;
+				top: 229px;
+				border-radius: 3px 3px 3px 3px;
+			}
+			
+			#pos {
+				border: 1px solid #888;
+				width: 100px;
+				height: 100px;
+				background: rgba(255, 255, 255, 0.2);
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+			
+			.pinpai {
+				position: absolute;
+				top: 76px;
+				left: 500px;
+			}
+			
+			.bianhao {
+				position: absolute;
+				top: 76px;
+				left: 820px;
+			}
+			
+			.cuxiao {
+				position: absolute;
+				top: 149px;
+				left: 500px;
+			}
+			
+			.xiaoa {
+				display: block;
+				height: 92px;
+				width: 92px;
+				position: absolute;
+				top: 406px;
+				left: 41px;
+				border: 1px solid #888;
+			}
+			
+			.xiaoa .xiaotu {
+				display: block;
+				height: 92px;
+				width: 72px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="newleft">
+			<ul>
+				<li>
+					<a href="index.html">首 页</a>
+				</li>
+				<li class="xinxi">
+					<a href="">品牌系列</a>
+					<div class="productMenu">
+						<span></span>
+						<a href="">维您</a>
+						<span></span>
+						<a href="">LA CELLER</a>
+						<span></span>
+						<a href="">秘密花园</a>
+						<span></span>
+					</div>
+				</li>
+				<li>
+					<a href="productList.html?user=">美容护肤</a>
+				</li>
+				<li>
+					<a href="productList.html?user=">健康养生</a>
+				</li>
+				<li>
+					<a href="productList.html?user=">家具日常</a>
+				</li>
+				<li>
+					<a href="productList.html?user=">积分换购</a>
+				</li>
+				<li class="ass">
+					<a href="#">VIP
+						</br>会员专区</a>
+				</li>
+				<li>
+					<a href="productList.html?user=">关于麦考林</a>
+				</li>
+				<li>
+					<a href="productList.html?user=">企业荣誉</a>
+				</li>
+			</ul>
+		</div>
+		<div class="newright">
+			<div class="kefu">
+				<a href=""><img src="img/rightSider_01.png" /></a>
+			</div>
+			<div class="consult-tel">
+				<a href=""><img src="img/rightSider_02.png" /></a>
+			</div>
+			<div class="gonggao">
+				<a href=""><img src="img/gonggao.jpg" /></a>
+			</div>
+			<div class="ke">
+				<img src="img/kefu1.png" alt="" class="kefuTel" />
+			</div>
+			<a href="" class="newTop"><img src="img/rightSider_04.png" /></a>
+		</div>
+		<!--<div class="head">
+			<div class="search">
+				<div class="search-box">
+					<form action="" id="searchForm" name="keywords" method="get">
+						<input type="text" name="keywords" id="searchInput" placeholder="热门搜索: 洁面  控油  祛痘" autocomplete="off" />
+						<button type="submit">搜索</button>
+						<a class="close"></a>
+					</form>
+				</div>
+			</div>
+		</div>
+		<header>
+			<h1>
+				<a href="index.html"><img src="img/newlogo.png" alt="" /></a>
+			</h1>
+			<ul>
+				<li class="fdjbtn">
+					<a href="#" class="fdj iconfont icon-fangdajing"></a>
+				</li>
+				<li>|
+					<a href="login-in.html">登录</a>
+				</li>
+				<li>|
+					<a href="register.html">注册</a>
+				</li>
+				<li>|
+					<a href="">我的账户</a>
+				</li>
+				<li>|
+					<a href="cart.html" class="tel iconfont icon-gouwuchekong">
+						<span class="oSpan">0</span>
+					</a>
+					<span><img src="img/tel-call.png" alt="" /></span>
+				</li>
+			</ul>
+		</header>-->
+		<div id="tou"></div>
+		<div id="detail" style="height: 521px;background: #fff;margin: 0 auto;padding-top: 20px;position: relative;">
+			
+		</div>
+		<div class="b clearfix b-wrap">
+			<div class="b-l g-t fl">
+				<div class="s-n">
+					<ul class="clearfix" id="ulwrap"> 
+						<li class="active"><a href="javascript:void(0);">商品信息</a></li>
+						<li><a href="javascript:void(0);">商品评论</a></li>
+						<li><a href="javascript:void(0);">商品问答</a></li>
+					</ul>
+				</div>
+				<div class="dahexi">
+					<div class="m-c b on">
+					<div class="m-i">
+						<div class="imgs">
+							<img src="img/1.jpg"/>
+							<img src="img/2.jpg"/>
+							<img src="img/3.jpg"/>
+							<img src="img/4.jpg"/>
+							<img src="img/5.jpg"/>
+							<img src="img/6.jpg"/>
+							<img src="img/7.jpg"/>
+							<div style="margin: 0 auto; width: 90%;">
+								<table border="0" cellspacing="0" cellpadding="0" style="line-height: 30px; font-size: 1em; width: 100%;
+									margin: 0 auto;">
+									<tbody>
+										<tr>
+											<td>【名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称】:维您葡萄干（压缩糖果）60片</td></tr>
+											<tr><td>【品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌】:维您</td></tr>
+											<tr><td>【产&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地】:江苏苏州</td></tr>
+											<tr><td>【规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格】:0.6g/片*60片</td></tr>
+											<tr><td>【净&nbsp;&nbsp;&nbsp;含&nbsp;&nbsp;&nbsp;量】:36g</td></tr>
+											<tr><td>【保&nbsp;&nbsp;&nbsp;质&nbsp;&nbsp;&nbsp;期】:24个月</td></tr>
+											<tr><td>【配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;料】：乳糖、红葡萄水果粉（红葡萄浓缩汁、麦芽糊精）、蔓越莓水果粉（蔓越莓浓缩汁、麦芽糊精）、针叶樱桃浓缩粉（针叶樱桃、麦芽糊精）、蔬果粉、羟丙基甲基纤维素、硬脂酸镁、聚乙二醇</td>
+										</tr>
+										<tr>
+											<td>【贮存条件】：密封，置于阴凉干燥处</td>
+										</tr>
+										<tr>
+											<td>【食用方法】：直接食用</td>
+										</tr>
+										<tr>
+											<td>【友情提示】：由于部分商品包装更换较频繁，若收到的货物与图片不一致时，请您以收到的商品实物为准，我们也将尽量做到即时更新，不便之处,敬请见谅，谢谢您的支持！</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="c_class">
+							<div class="m m-18">
+								<div class="h">
+									<h3>商品评论</h3>
+								</div>
+								<div class="b2">
+									<div class="mc">
+										暂无评论
+									</div>
+								</div>
+							</div>
+					
+						<div class="m m-20 m-18">
+							<div class="h"><h3>商品问答</h3></div>
+							<div class="b2">
+								<form action="JavaScript:;" method="post" name="mF" class="quiz">
+									<h4>我要提问</h4>
+									<div class="comment">
+										<textarea name="msg_content" rows="5" cols="5" placeholder="请输入您的评论内容！" class="input textarea"></textarea>
+										<span>字数限制为5-200个</span>
+										<a href="javascript:void(0);" class="com-btn">提交</a>
+										<input type="hidden" name="msg_type" value="0" />
+										<input type="hidden" name="id" class="msgid" value="7669" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="m-c b">
+						<div class="c_class">
+							<div class="m m-18">
+								<div class="h">
+									<h3>商品评论</h3>
+								</div>
+								<div class="b2">
+									<div class="mc">
+										暂无评论
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-c b">
+						<div class="m m-20 m-18">
+							<div class="h"><h3>商品问答</h3></div>
+							<div class="b2">
+								<form action="JavaScript:;" method="post" name="mF" class="quiz">
+									<h4>我要提问</h4>
+									<div class="comment">
+										<textarea name="msg_content" rows="5" cols="5" placeholder="请输入您的评论内容！" class="input textarea"></textarea>
+										<span>字数限制为5-200个</span>
+										<a href="javascript:void(0);" class="com-btn">提交</a>
+										<input type="hidden" name="msg_type" value="0" />
+										<input type="hidden" name="id" class="msgid" value="7669" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="r-nav">
+				<h3>相关产品</h3>
+				<ul id="r-list">
+					
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div class="footer">
+			<div class="footerTop">
+				<div class="fl">
+					<ul>
+						<li>
+							<a href="" class="md iconfont icon-zan"></a>
+							<a href="">100%正品保证</a>
+						</li>
+						<li>
+							<a href="" class="md iconfont icon-kefu"></a>
+							<a href="">专业在线客服</a>
+						</li>
+						<li>
+							<a href="" class="md iconfont icon-baoyou"></a>
+							<a href="">满99包邮</a>
+						</li>
+					</ul>
+				</div>
+				<div class="fc">
+					<dl>
+						<dt>新手指南</dt>
+						<dd>
+							<a href="" title="新会员注册" target="_blank">新会员注册</a>
+						</dd>
+						<dd>
+							<a href="" title="购物演示" target="_blank">购物演示</a>
+						</dd>
+						<dd>
+							<a href="" title="常见问题" target="_blank">常见问题</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>付款方式</dt>
+						<dd>
+							<a href="" title="银行卡支付" target="_blank">银行卡支付</a>
+						</dd>
+						<dd>
+							<a href="" title="支付宝支付" target="_blank">支付宝支付</a>
+						</dd>
+						<dd>
+							<a href="" title="余额支付" target="_blank">余额支付</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd>
+							<a href="" title="退换货政策" target="_blank">退换货政策</a>
+						</dd>
+						<dd>
+							<a href="" title="退换货流程" target="_blank">退换货流程</a>
+						</dd>
+						<dd>
+							<a href="" title="退款流程" target="_blank">退款流程</a>
+						</dd>
+						<dd>
+							<a href="" title="发票说明" target="_blank">发票说明</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>特色服务</dt>
+						<dd>
+							<a href="" title="贵宾专区" target="_blank">贵宾专区</a>
+						</dd>
+						<dd>
+							<a href="" title="在线客服" target="_blank">在线客服</a>
+						</dd>
+					</dl>
+					<dl class="ewm">
+						<dt>麦考林生活家</dt>
+						<dd>
+							<img src="img/ewm1.jpg" alt="麦考林生活家" />
+						</dd>
+					</dl>
+					<dl class="ewm">
+						<dt>麦考林服务号</dt>
+						<dd>
+							<img src="img/fuwu.jpg" alt="麦考林服务号" />
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="footerBottom">
+				<ul>
+					<li class="one">
+						<a href="">关于麦考林</a>
+					</li>
+					<li>
+						<a href="">INVESTOR RELATIONS</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">服务中心</a>
+					</li>
+					<li class="last">
+						<a href="">加入我们</a>
+					</li>
+				</ul>
+				<p>
+					<a href=""><img src="img/newicon.jpg" alt="" /></a>
+					沪ICP备05003606号Copyright©2011-2015 MecoxLane Inc. All Rights Reserved
+				</p>
+				<div class="fbdiv">
+
+					<a href="" targte="_blank"> <img src="img/xfwqNew.jpg" /></a>
+					<a href="" targte="_blank"><img src="img/evaluate.jpg" /></a>
+					<a href="" targte="_blank"><img src="img/beian.jpg" />沪公网安备 31010402000234号</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".newTop").css("display", "none");
+				$(window).scroll(function() {
+					if($(window).scrollTop() > 500) {
+						$(".newTop").fadeIn(1500);
+					} else {
+						$(".newTop").fadeOut(1500);
+					}
+				});
+				$(".newTop").click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 1);
+					return false;
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(function(){
+				$("#tou").load("base.html")
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" type="text/css" href="scss/base.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="scss/product.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+	<div class="newleft">
+			<ul>
+				<li>
+					<a href="index.html">首   页</a>
+				</li>
+				<li class="xinxi">
+					<a href="">品牌系列</a>
+					<div class="productMenu">
+						<span></span>
+						<a href="#">维您</a>
+						<span></span>
+						<a href="#">LA CELLER</a>
+						<span></span>							
+						<a href="#">秘密花园</a>
+						<span></span>
+					</div>
+				</li>
+				<li>
+					<a href="productList.html" class="meirong">美容护肤</a>
+				</li>
+				<li>
+					<a href="productList.html" class="jiankang">健康养生</a>
+				</li>
+				<li>
+					<a href="productList.html?user=" class="jiayong">家具日常</a>
+				</li>
+				<li>
+					<a>积分换购</a>
+				</li>
+				<li class="ass">
+					<a>VIP
+					</br>会员专区</a>
+				</li>
+				<li>
+					<a>关于麦考林</a>
+				</li>
+				<li>
+					<a>企业荣誉</a>
+				</li>
+			</ul>
+		</div>
+		<div class="newright">
+			<div class="kefu">
+				<a href=""><img src="img/rightSider_01.png" /></a>
+			</div>
+			<div class="consult-tel">
+				<a href=""><img src="img/rightSider_02.png" /></a>
+			</div>
+			<div class="gonggao">
+				<a href=""><img src="img/gonggao.jpg" /></a>
+			</div>
+			<div class="ke">
+				<img src="img/kefu1.png" alt="" class="kefuTel"/>
+			</div>
+			<a href="" class="newTop"><img src="img/rightSider_04.png" /></a>
+		</div>
+		
+		<div id="tou">
+			
+		</div>
+		<div class="nav-wrap">
+			<div class="nav-box clearfix">
+				<a href="/">首页</a><code>></code><a href="#">美容护肤</a>
+			</div>
+			<ul id="ul-nav">
+				<li class="show">
+					<b>品&nbsp;&nbsp;牌:</b>
+					<span class="more">
+						<a href="#">
+							<i></i>更多
+						</a>
+					</span>
+					<span class="hide">
+						<a href="#">
+							<i></i>收起
+						</a>
+					</span>
+					<div id="brands" class="mod">
+						<span>
+							<a href="" title="LA CELLER">LA CELLER <i>(26)</i></a>
+						</span>
+						<span>
+							<a href="" title="秘密花园">秘密花园 <i>(14)</i></a>
+						</span>
+						<span>
+							<a href="" title="SONOKO">SONOKO <i>(20)</i></a>
+						</span>
+						<span>
+							<a href="" title="兰蔻">兰蔻 <i>(12)</i></a>
+						</span>
+					</div>
+					<div id="allBrands" class="allBrands mod">
+						<span>
+							<a href="" title="LA CELLER">LA CELLER <i>(26)</i></a>
+						</span>
+						<span>
+							<a href="" title="秘密花园">秘密花园 <i>(14)</i></a>
+						</span>
+						<span>
+							<a href="" title="SONOKO">SONOKO <i>(20)</i></a>
+						</span>
+						<span>
+							<a href="" title="兰蔻">兰蔻 <i>(12)</i></a>
+						</span>
+						<span>
+							<a href="" title="LA CELLER">LA CELLER <i>(26)</i></a>
+						</span>
+						<span>
+							<a href="" title="秘密花园">秘密花园 <i>(14)</i></a>
+						</span>
+						<span>
+							<a href="" title="SONOKO">SONOKO <i>(20)</i></a>
+						</span>
+						<span>
+							<a href="" title="兰蔻">兰蔻 <i>(12)</i></a>
+						</span>
+						<span>
+							<a href="" title="LA CELLER">LA CELLER <i>(26)</i></a>
+						</span>
+						<span>
+							<a href="" title="秘密花园">秘密花园 <i>(14)</i></a>
+						</span>
+						<span>
+							<a href="" title="SONOKO">SONOKO <i>(20)</i></a>
+						</span>
+						<span>
+							<a href="" title="兰蔻">兰蔻 <i>(12)</i></a>
+						</span>
+						<span>
+							<a href="" title="LA CELLER">LA CELLER <i>(26)</i></a>
+						</span>
+						<span>
+							<a href="" title="秘密花园">秘密花园 <i>(14)</i></a>
+						</span>
+						<span>
+							<a href="" title="SONOKO">SONOKO <i>(20)</i></a>
+						</span>
+						<span>
+							<a href="" title="兰蔻">兰蔻 <i>(12)</i></a>
+						</span>
+					</div>
+				</li>
+				<li class="show">
+					<b>分&nbsp;&nbsp;类</b>
+					<div class="mod">
+						<span>
+							<a href="" title="精油香奈">精油香奈 <i>(20)</i></a>
+						</span>
+						<span>
+							<a href="" title="身体护理">身体护理 <i>(12)</i></a>
+						</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="subnav clearfix">
+			<h3>排序</h3>
+			<ul class="clearfix">
+				<li class="active"> 
+					<a href="javascript:void(0)">
+						销量<b></b>
+					</a>
+				</li>
+				<li> 
+					<a href="javascript:void(0)" class="pristabe down">
+						价格<b></b>
+					</a>
+				</li>
+				<li> 
+					<a href="javascript:void(0)">
+						最新<b></b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="list">
+			<ul id="proList">
+			</ul>
+			<div class="fenye">
+				<div id="pageList">
+					<a>上一页</a>
+					<span id="nums"></span>
+					<a>下一页</a>
+				</div>
+			</div>
+			
+		</div>
+		<div id="link-f"></div>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+			$(function() {
+				$('#link-f').load('footer.html')
+			})
+		</script>
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/product.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#tou").load("base.html")
+			})
+		</script>
+		<script type="text/javascript">
+			$.getJSON("json/details.json", function(data) {
+				var oUl = document.getElementById("proList");	
+				var oSpan = document.getElementsByClassName("oSpan")[0];
+				var str = "";
+				
+				for(var i in data) {
+					str += "<li><a href='detail1.html?id=" + i + "'><img src='" + data[i].img + "'></a><h4><a href='#'>" + data[i].title + "</a></h4><p><span>" + data[i].price + "</span><input type='button' value='+' data-id =" + i + "></p></li>"
+				}
+				oUl.innerHTML = str;
+				
+				var aBtn = document.getElementsByTagName("input");
+				//如果有cart，取出cart对应的值
+				if(getCookie("cart")) {
+					var objCookie = JSON.parse(getCookie("cart"));
+				} else {
+					//没有的话 定义一个对象去，未来点击按钮时保存数据
+					var objCookie = {};
+				}
+
+				//右上角购物篮中的数值要发生改变
+				var total = 0;
+				for(var i in objCookie) {
+					total += objCookie[i];
+				}
+				$(".oSpan").html(total);
+
+				for(var i = 0; i < aBtn.length; i++) {
+
+					aBtn[i].onclick = function() {
+						alert("加入成功！");
+						//取出当前商品ID
+						var proId = this.getAttribute("data-id");
+						//同种商品增加数量
+						if(!objCookie[proId]) {
+							objCookie[proId] = 1;
+						} else {
+							//不同商品增加一个新的属性，并赋值为1
+							objCookie[proId] += 1;
+						}
+
+						//cookie存的是字符串，需要转换
+						var strCookie = JSON.stringify(objCookie);
+
+						setCookie("cart", strCookie, 7);
+						//点击时，右上角的数字要同时发生改变
+						total += 1;
+						$(".oSpan").html(total);
+					}
+				}
+			})
+			
+			
+		</script>
+	</body>
+
+</html>

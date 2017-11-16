@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Microsoft YaHei";
+  color: #888;
+  background: #f0f0f0; }
+  body .head {
+    width: 100%;
+    overflow: hidden; }
+    body .head .search {
+      width: 100%;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 999; }
+      body .head .search .search-box {
+        opacity: 1;
+        width: 700px;
+        height: 40px;
+        top: 16px;
+        left: 50%;
+        margin-left: -350px;
+        background: #666;
+        position: relative;
+        z-index: 999; }
+        body .head .search .search-box form #searchInput {
+          width: 550px;
+          height: 40px;
+          padding: 0 18px;
+          font-size: 14px;
+          color: #555;
+          border: 0 none;
+          background: #FFFFFF;
+          overflow: hidden;
+          vertical-align: middle; }
+        body .head .search .search-box .btnIn {
+          width: 110px;
+          height: 40px;
+          text-align: center;
+          font-size: 14px;
+          color: #FFFFFF;
+          border: none;
+          overflow: hidden;
+          vertical-align: middle;
+          background: #000000;
+          outline: none;
+          cursor: pointer; }
+        body .head .search .search-box .close {
+          cursor: pointer;
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          top: 8px;
+          right: -40px;
+          background: url(../img/vivo-head-ico.png) no-repeat -86px 0; }
+      body .head .search #lists {
+        height: 200px;
+        position: absolute;
+        top: 80px; }
+        body .head .search #lists li {
+          height: 40px;
+          line-height: 40px;
+          border: 1px solid #CECECE; }
+  body header {
+    width: 1152px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    body header h1 {
+      height: 70px;
+      padding-top: 10px;
+      line-height: 70px; }
+      body header h1 a img {
+        display: inline-block; }
+    body header ul {
+      margin-top: 34px;
+      height: 23px;
+      float: right;
+      position: relative;
+      right: -10px;
+      display: inline; }
+      body header ul li {
+        float: left; }
+        body header ul li a {
+          position: relative;
+          padding: 0 2px;
+          color: #888; }
+          body header ul li a .oSpan {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #D10048;
+            position: absolute;
+            top: -2px;
+            left: 15px;
+            text-align: center;
+            padding: 0 1px;
+            color: #FFFFFF;
+            line-height: 18px;
+            font-size: 12px; }
+        body header ul li .userming {
+          color: #D10048; }
+        body header ul li .tel {
+          display: inline-block;
+          padding-right: 6px;
+          font-size: 18px;
+          background-position: 0 -45px;
+          width: 23px;
+          height: 22px;
+          margin-top: -8px; }
+        body header ul li .fdj {
+          display: inline-block;
+          font-size: 20px;
+          margin-top: -6px; }
+
+/*# sourceMappingURL=base.css.map */
