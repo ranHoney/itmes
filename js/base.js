@@ -3,9 +3,6 @@ $(function(){
 	
 	var ss= JSON.parse($.cookie("login"));
 	//console.log(typeof ss,ss.name);
-	
-	var s = window.location.search;
-	s = s.split("=");
 	$(".userming").html("欢迎  "+ss.name);
 	
 	var flag;
@@ -16,7 +13,7 @@ $(function(){
 			flag = false;
 		}
 		if(flag){
-			$(this).html("登录")
+			$(this).html("登录");
 		}
 	})
 				

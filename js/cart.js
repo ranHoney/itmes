@@ -9,7 +9,7 @@ $(function() {
 	//号码图片显示与隐藏
 	$('.consult-tel').mouseenter(function() {
 		$('.ke').css('z-index', 9999);
-		$('.ke').animate({
+		$('.ke').stop().animate({
 			'right': 66,
 			'opacity': 1
 		}, 400)
@@ -59,6 +59,9 @@ $(function() {
 		}, 1);
 		return false;
 	});
+	
+	
+	
 });
 
 $.getJSON("json/details.json", function(data) {
@@ -74,9 +77,11 @@ $.getJSON("json/details.json", function(data) {
 	//根据cookie中保存的数据生成DOM结构
 	var str = "";
 	var shul = 0;
-	//			console.log(objCookie);
-	for(var i in objCookie) {
+//				console.log(objCookie);
+	for(let i in objCookie) {
 		//i指产品id，取出该产品id对应的值（一个包含产品属性的对象）
+//		console.log(i);
+//		console.log(data[i]);
 		var obj = data[i];
 		shul += objCookie[i];
 		var arr = obj.price;

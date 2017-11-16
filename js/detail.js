@@ -1,4 +1,5 @@
 $(function() {
+	
 	$(".productMenu").hide();
 	$('.xinxi').mouseenter(function() {
 		$('.productMenu').show(200);
@@ -70,7 +71,6 @@ $(function() {
 		}
 		
 		$("#r-list").html(ostr);
-
 		var oZoomBox = document.getElementById("dbox");
 		var oMidArea = document.getElementById("xbox");
 		var oZoom = document.getElementById("zoom");

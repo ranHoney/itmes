@@ -47,6 +47,8 @@ body {
           height: 44px;
           color: #fff;
           overflow: hidden; }
+        body .newleft ul li a:hover {
+          background: #db366f; }
         body .newleft ul li .productMenu {
           width: 74px;
           height: 100%;

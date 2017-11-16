@@ -41,11 +41,13 @@ body,ul,li,h4,p {
                         padding: 6px 0;
                         text-align: center;
                         margin-bottom: 10px;
-                    >img{
-                        overflow: hidden;
-                        width: 160px;
-                        height: 208px;
-                    }}
+                        >img{
+                            overflow: hidden;
+                            width: 160px;
+                            height: 208px;
+                        }
+                        
+                    }
                 h4{
                     font-size: 13px;
                     height: 38px;
@@ -317,6 +319,9 @@ body,ul,li,h4,p {
                      height: 44px;
                      color: #fff;
                      overflow: hidden;
+                     &:hover{
+                         background: #db366f;
+                     }
                  }
                  .productMenu {
                      width: 74px;

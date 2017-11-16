@@ -225,7 +225,6 @@
 					str += "<li><a href='detail1.html?id=" + i + "'><img src='" + data[i].img + "'></a><h4><a href='#'>" + data[i].title + "</a></h4><p><span>" + data[i].price + "</span><input type='button' value='+' data-id =" + i + "></p></li>"
 				}
 				oUl.innerHTML = str;
-				
 				var aBtn = document.getElementsByTagName("input");
 				//如果有cart，取出cart对应的值
 				if(getCookie("cart")) {
