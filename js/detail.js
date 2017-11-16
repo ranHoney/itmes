@@ -81,9 +81,9 @@ $(function() {
 			$("#zoom").css("display", "block");
 			$(".bigImg").css("display", "block");
 
-			var _left = evt.clientX - oZoomBox.offsetLeft - oZoom.offsetWidth / 2 - $('#detail').offset().left - 40;
-			var _top = evt.clientY - oZoomBox.offsetTop - oZoom.offsetHeight / 2 - $('#detail').offset().top - 30;
-
+			var _left = evt.pageX - oZoomBox.offsetLeft - oZoom.offsetWidth/2 - $('#detail').offset().left-oMidArea.offsetLeft;
+			var _top = evt.pageY - oZoomBox.offsetTop - oZoom.offsetHeight / 2 - $('#detail').offset().top-oMidArea.offsetTop;
+			console.log(oMidArea.offsetLeft,oZoomBox.offsetLeft,$('#detail').offset().left,evt.pageX);
 			//不能越界
 
 			if(_left <= 0) {
@@ -100,10 +100,9 @@ $(function() {
 			}
 			oZoom.style.left = _left + "px";
 			oZoom.style.top = _top + "px";
-			//			放大镜向右移动的距离与中图区域宽度的比 和  大图向左移动的距离和大图宽度的比 相等
+			//放大镜向右移动的距离与中图区域宽度的比 和  大图向左移动的距离和大图宽度的比 相等
 			oBigImg.style.left = -oZoom.offsetLeft / oMidArea.offsetWidth * oBigImg.offsetWidth + "px";
 			oBigImg.style.top = -oZoom.offsetTop / oMidArea.offsetHeight * oBigImg.offsetHeight + "px";
-
 		})
 		$("#dbox").on("mouseout",function() {
 			oZoom.style.display = "none";
